@@ -118,8 +118,7 @@ public class DBSCANClusterer<V> {
      */
     private ArrayList<V> getNeighbours(final V inputValue) throws DBSCANClusteringException {
         ArrayList<V> neighbours = new ArrayList<V>();
-        for(int i=0; i<inputValues.size(); i++) {
-            V candidate = inputValues.get(i);
+        for (V candidate : inputValues) {
             if (metric.calculateDistance(inputValue, candidate) <= epsilon) {
                 neighbours.add(candidate);
             }
@@ -137,8 +136,7 @@ public class DBSCANClusterer<V> {
      */
     private ArrayList<V> mergeRightToLeftCollection(final ArrayList<V> neighbours1,
             final ArrayList<V> neighbours2) {
-        for (int i = 0; i < neighbours2.size(); i++) {
-            V tempPt = neighbours2.get(i);
+        for (V tempPt : neighbours2) {
             if (!neighbours1.contains(tempPt)) {
                 neighbours1.add(tempPt);
             }
@@ -179,10 +177,8 @@ public class DBSCANClusterer<V> {
         visitedPoints.clear();
 
         ArrayList<V> neighbours;
-        int index = 0;
 
-        while (inputValues.size() > index) {
-            V p = inputValues.get(index);
+        for (V p : inputValues) {
             if (!visitedPoints.contains(p)) {
                 visitedPoints.add(p);
                 neighbours = getNeighbours(p);
@@ -205,7 +201,6 @@ public class DBSCANClusterer<V> {
                     resultList.add(neighbours);
                 }
             }
-            index++;
         }
         return resultList;
     }
