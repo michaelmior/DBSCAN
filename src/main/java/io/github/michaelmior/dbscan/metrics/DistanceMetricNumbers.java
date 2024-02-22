@@ -1,6 +1,6 @@
-package org.christopherfrantz.dbscan.metrics;
+package io.github.michaelmior.dbscan.metrics;
 
-import org.christopherfrantz.dbscan.DistanceMetric;
+import io.github.michaelmior.dbscan.DistanceMetric;
 
 /**
  * Distance metric implementation for numeric values.

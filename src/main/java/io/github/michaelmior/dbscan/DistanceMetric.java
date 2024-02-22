@@ -1,4 +1,4 @@
-package org.christopherfrantz.dbscan;
+package io.github.michaelmior.dbscan;
 
 /**
  * Interface for the implementation of distance metrics.

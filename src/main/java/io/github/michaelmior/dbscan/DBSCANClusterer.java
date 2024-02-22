@@ -1,4 +1,4 @@
-package org.christopherfrantz.dbscan;
+package io.github.michaelmior.dbscan;
 
 import java.util.ArrayList;
 import java.util.Collection;

@@ -1,11 +1,11 @@
-package org.christopherfrantz.dbscan;
+package io.github.michaelmior.dbscan;
 
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
 import java.util.Random;
 
-import org.christopherfrantz.dbscan.metrics.DistanceMetricNumbers;
+import io.github.michaelmior.dbscan.metrics.DistanceMetricNumbers;
 import org.junit.Test;
 
 /**
