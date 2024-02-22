@@ -1,4 +1,6 @@
 # DBSCAN
+[![Test](https://github.com/michaelmior/DBSCAN/actions/workflows/ci.yml/badge.svg)](https://github.com/michaelmior/DBSCAN/actions/workflows/ci.yml)
+
 Lightweight Java implementation of density-based clustering algorithm DBSCAN
 
 ## Download/Building
